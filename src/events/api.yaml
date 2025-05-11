@@ -1,0 +1,43 @@
+http.get./team:
+  fn: api.getTeam
+
+http.get./product:
+  fn: api.getProduct
+
+http.get./pricing:
+  fn: api.getPricing
+
+http.post./contact:
+  fn: api.postContact
+  body:
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            name: { type: string }
+            email: { type: string }
+            message: { type: string }
+
+http.post./login:
+  fn: api.login
+  body:
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            email: { type: string }
+            password: { type: string }
+
+http.post./register:
+  fn: api.register
+  body:
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            name: { type: string }
+            email: { type: string }
+            password: { type: string }
