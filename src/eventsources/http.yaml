@@ -58,3 +58,8 @@ on_response_validation_error: validations.response.standardResponse
 #       code: 500
 #       data:
 #         message: <% inputs.validation_error.data.message %>
+cors:
+  origin: "*"
+  methods: ["GET", "POST", "OPTIONS"]
+  allowedHeaders: ["Content-Type", "Authorization"]
+  credentials: true
