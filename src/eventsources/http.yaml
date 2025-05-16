@@ -62,5 +62,4 @@ cors:
   origin: "*"
   methods: ["GET", "POST", "OPTIONS"]
   allowedHeaders: ["Content-Type", "Authorization"]
-  credentials: tru]'
-  
+  credentials: true
