@@ -10,7 +10,7 @@
   "kafka": false,
   "elasticsearch": false,
   "redis": false,
-  "servicePort": 3000,
+  "servicePort": 80,
   "gsNodeServiceVersion": "latest",
   "projectName": "godspeed-backend",
   "meta": {
